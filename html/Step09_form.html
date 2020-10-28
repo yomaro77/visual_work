@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>폼 요소 작성하기</h1>
+    <form action="login.jsp">
+        <label for="email">이메일</label>
+        <input type="text" id="email" name="email">
+        <label for="pwd">비밀번호</label>
+        <input type="password" id="pwd" name="pwd">
+        <button type="submit">로그인</button>
+    </form>
+
+    <form action="https://www.yahoo.com">
+        <label for="id">아이디</label>
+        <input type="text" id="id" name="id">
+        <label for="pwd">비밀먼호</label>
+        <input type="password" id="pwd" name="pwd">
+        <button type="submit">로그인</button>
+    </form>
+
+    <form action="https://yahoo.co.kr">
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title">
+        <label for="context">내용</label>
+        <input type="text" id="context" name="context">
+        <label for="test">체크박스</label>
+        <input type="checkbox" name="test" id="test">
+        <input type="checkbox" name="test" id="test">
+        <input type="checkbox" name="test" id="test">
+
+        <label for="radio">radio 박스</label>
+        <input type="radio" name="radio" id="radio">
+        <input type="radio" name="radio" id="radio">
+        <input type="radio" name="radio" id="radio">
+        <button type="submit">글쓰기</button>
+    </form>
+
+    <form action="yahoo.com">
+        <ol>
+            <label for="radio">과일종류</label>
+            <li>
+                사과 <input type="radio" id="radio" name="radio_apple">
+            </li>
+            <li>
+                포도 <input type="radio" id="radio" name="radio_grape">
+            </li>
+            <li>
+                수박 <input type="radio" id="radio" name="radio_watermelon">
+            </li>
+        </ol>
+        <button type="submit">제출</button>
+    </form>
+
+    <table border="1">
+        <caption>title</caption>
+        <thead>
+            <tr>
+                <th>10/1</th>
+                <th>10/2</th>
+                <th>10/3</th>
+                <th>10/4</th>
+                <th>10/5</th>
+                <th>total</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th colspan="5">total</th>
+                <td>1500</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>200</td>
+                <td>200</td>
+                <td>200</td>
+                <td>200</td>
+                <td>1000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
