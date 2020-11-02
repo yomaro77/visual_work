@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+    <script>
+        //친구의 이름을 순서대로 하나의 묶음으로 관리하기
+        var names = ["김구라", "해골", "원숭이", "주뎅이", "덩어리"];
+
+        var nums = [10, 20, 30, 40, 50];
+
+        names[2] = "신현호";
+        nums[0] = 100;
+
+        for(i=0; i<names.length; i++){
+            document.getElementById("para").innerHTML += names[i] + "&nbsp;";
+            document.getElementById("para").innerText += nums[i] + "\n";
+
+        }
+    </script>
+</body>
+</html>

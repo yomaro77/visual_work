@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1101.html</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>숫자 1</li>
+            <li>숫자 2</li>
+            <li>숫자 3</li>
+        </ul>
+    </div>
+    <div>
+        <ol>
+            <li>숫자 1</li>
+            <li>숫자 2</li>
+            <li>숫자 3</li>
+        </ol>
+    </div>
+    <div>
+        <dl>
+            <dt>1번</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores consequuntur, nostrum ad culpa amet, fuga, autem porro ab aperiam illum. Reiciendis, commodi mollitia dolorem eligendi fuga sapiente corrupti iusto!</dd>
+            <dt>2번</dt>
+            <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel doloribus, neque dicta voluptatibus sequi tempora quas facere ipsa nesciunt distinctio quo officia illum minima, suscipit nobis itaque quaerat culpa?</dd>
+        </dl>
+    </div>
+    <div>
+        <table border="1">
+            <caption>주소명부</caption>
+            <colgroup>
+                <col width="100px"> 
+                <col width="200px"> 
+                <col width="300px"> 
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>번호</th>
+                    <th>주소</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>이요한</td>
+                    <td>010-1234-4321</td>
+                    <td>서울시 서초구 갈현동 11-2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>잉</td>
+                    <td>잉</td>
+                    <td>잉</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div>
+            <form action="login.jsp">
+                <label for="id">아이디</label>
+                <input type="text" id="id" name="id" />
+                <label for="pw">비밀번호</label>
+                <input type="password" id="pw" name="pw" />
+                <br />
+                <button type="submit">로그인</button>
+
+                <fieldset>
+                    <legend>과일종류</legend>
+                    <input type="radio" name="fruit" value="사과" />사과
+                    <input type="radio" name="fruit" value="포도" />포도
+                    <input type="radio" name="fruit" value="배" />배
+                </fieldset>
+                <fieldset>
+                    <legend>좋아하는 차</legend>
+                    <input type="checkbox" name="car" value="현다이" />현다이
+                    <input type="checkbox" name="car" value="기아" />기아
+                    <input type="checkbox" name="car" value="쌍용" />쌍용
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

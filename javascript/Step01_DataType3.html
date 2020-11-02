@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>회원정보</h1>
+    <p id="member"></p>
+    <script>
+        //회원 한명의 정보라고 가정하자
+        var num = 1;
+        var name = "김구라";
+        var addr = "노량진";
+        
+        //다른 data type 을 활용하면 1개의 변수명으로 회원 한명의 정보를
+        // 관리 할수 있다. 
+
+        var mem1 = {num:1, name:"김구라", addr:"노량진"};
+        var mem2 = {name:"해골", num:2, addr:"노량진"};
+        var mem3 = {num:num, name:name, addr:addr};
+
+        var a = mem1.num;
+        var b = mem2.name;
+        var a = mem3.addr;
+
+        var number = 0;
+        for(i=0; i<5; i++) {
+            for(j=0; j<i; j++) {
+                document.getElementById("member").innerText += "★";
+            }
+            document.getElementById("member").innerText += "\n";
+        }
+
+        alert(mem2.addr);
+    </script>
+</body>
+</html>

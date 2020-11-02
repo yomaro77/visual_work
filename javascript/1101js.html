@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1101 js</title>
+</head>
+<body>
+    <p>
+        <h1 id="bigfont" onclick="changefont()">나 글씨 짱크다</h1>
+        <h1 id="bigfont2" onclick="document.getElementById('bigfont2').style.color='tomato';">나글씨 크지..?</h1>
+    </p>
+
+    <script>
+        function changefont(){
+            document.querySelector("#bigfont").innerText="너 글씨 작은데..";
+        }
+    </script>
+</body>
+</html>
