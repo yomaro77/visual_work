@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tbody{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>고객 리스트</h1>
+    <table border="1">
+        <colgroup>
+            <col width="30px">
+            <col width="100px">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>NO</th> <!-- 숫자 -->
+                <th>NAME</th> <!-- 이름-->
+            </tr>
+        </thead>
+        <tbody id="elist">
+        </tbody>
+    </table>
+    <script>
+        elist = [{no:1, name:"홍길동"}, {no:2, name:"장문복"}, {no:3, name:"아이유"}, {no:4, name:"임꺽정"}, {no:5, name:"윤미래"}];
+
+        for(i=0; i<elist.length; i++){
+            document.getElementById("elist").innerHTML += "<tr> <td onclick='changeColor()'>" + elist[i].no + "</td> <td id='me'>" + elist[i].name + "</td></tr>";
+        }
+
+        function changeColor(){
+                //document.querySelector("#me").style.color="tomato";
+                document.getElementById("me").style.color="tomato";
+        }
+    </script>
+</body>
+</html>

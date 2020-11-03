@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <style>
+        button {
+            width: 200px;
+            height: 50px;
+            background-color: tomato;
+            margin-left: 200px;
+            border: 0;
+            outline: 0;
+            color: white;
+            border-radius: 13px;
+        }
+        button:active {
+            box-shadow: 0 0 0 5px blueviolet;
+            font-size: 20px;
+        }
+        button:hover {
+            background-color: cornflowerblue;
+            color: cornsilk;
+        }
+        textarea {
+            margin-left: 200px;
+        }
+        #content_view {
+            margin-left: 200px;
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <p><textarea name="" id="content" cols="85" rows="10"></textarea></p>
+    <button id="countBtn" onclick="increase()">0</button>
+    <button onclick="text()">내용 보여줘</button>
+    <script>
+        var count = 0;
+        var today_content;
+        function increase() {
+            //count = count + 1;
+            document.querySelector("#countBtn").innerText = count = count + 1;
+
+            today_content = document.querySelector("#content").value;
+        }
+        function text() {
+            document.querySelector("#content_view").innerText = today_content;
+        }
+    </script>
+    <p id="content_view"></p>
+</body>
+</html>

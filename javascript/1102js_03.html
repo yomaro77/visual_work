@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 980px;
+            margin: 0 auto;
+        }
+        table{
+            width: 410px;
+        }
+        input{
+            width: 410px;
+            height: 50px;
+            border-radius: 13px;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+        }
+        #btn{
+            width: 410px;
+            height: 56px;
+            background-color: #0071E3;
+            border-radius: 13px;
+            color: white;
+            font-size: 16px;
+            border: 0;
+            outline: 0;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            outline-color: #6699ff;
+        }
+        button:active{
+            box-shadow: 0 0 0 5px #6699FF;
+        }
+        input:focus{
+            outline: 0;
+            box-shadow: 0 0 0 5px #6699FF;
+        }
+        a{
+            text-decoration: none;
+        }
+        form{
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="login.jsp">
+            <table>
+                <tr>
+                    <td><h1>로그인.</h1></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="id" placeholder="Apple ID" required /></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="pw" placeholder="암호" /></td>
+                </tr>
+                <tr>
+                    <td style="font-size:14px;">Apple ID는 iTunes, App Store, iCloud에 로그인할 때 사용하는 이메일 주소입니다.</td>
+                </tr>
+                <tr>
+                    <td><button type="submit" id="btn">로그인</button></td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:alert('암호를 찾아랏')">Apple ID 또는 암호를 잊으셨습니까?</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">ID가 없으신가요? 지금 생성.</a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+        <hr>
+</body>
+</html>

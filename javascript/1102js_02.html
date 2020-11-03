@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="test()">change</button>
+    <p id="ename"></p>
+    <script>
+        var name = ["남지혜", "김감자", "이유유", "하은지"];
+        document.getElementById("ename").innerHTML = name;
+
+        function test(){
+            name.sort();
+            document.getElementById("ename").innerHTML = name;
+        }
+    </script>
+</body>
+</html>
